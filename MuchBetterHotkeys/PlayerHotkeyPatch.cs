@@ -85,16 +85,6 @@ namespace MuchBetterHotkeys {
 				return;
 			}
 
-			if (Input.GetKeyDown(MuchBetterHotkeys.quickOpenSkillsHotkey.Value.MainKey)) {
-				PlayerHotkeyPatch.QuickOpenSkills();
-				return;
-			}
-
-			if (Input.GetKeyDown(MuchBetterHotkeys.quickOpenTextsHotkey.Value.MainKey)) {
-				PlayerHotkeyPatch.QuickOpenTexts();
-				return;
-			}
-
 			if (Input.GetKeyDown(MuchBetterHotkeys.quickEquipTorchHotkey.Value.MainKey)) {
 				PlayerHotkeyPatch.QuickEquipTorch(__instance);
 				return;

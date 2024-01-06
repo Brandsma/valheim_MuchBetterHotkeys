@@ -15,8 +15,6 @@
 		public static ConfigEntry<KeyboardShortcut> quickSelectBuildHotkey { get; set; }
 		public static ConfigEntry<KeyboardShortcut> quickRepairHotkey { get; set; }
 		public static ConfigEntry<KeyboardShortcut> quickEquipHammerHotkey { get; set; }
-		public static ConfigEntry<KeyboardShortcut> quickOpenSkillsHotkey { get; set; }
-		public static ConfigEntry<KeyboardShortcut> quickOpenTextsHotkey { get; set; }
 		public static ConfigEntry<KeyboardShortcut> buildRotationSnapHotkey { get; set; }
 		public static ConfigEntry<KeyboardShortcut> easyHotbarPrefix { get; set; }
 		public static ConfigEntry<KeyboardShortcut> scrollPieceSelectionPrefix { get; set; }
@@ -37,8 +35,6 @@
 			quickRepairHotkey = base.Config.Bind<KeyboardShortcut>(GENERAL_SETTINGS, "QuickRepairHotkey", new KeyboardShortcut(KeyCode.V), "While building, press this key to repair the object you're aiming at");
 			quickEquipHammerHotkey = base.Config.Bind<KeyboardShortcut>(GENERAL_SETTINGS, "QuickEquipHammerHotkey", new KeyboardShortcut(KeyCode.B), "Find the hammer with the lowest durability in your inventory and equip it");
 			quickEquipTorchHotkey = base.Config.Bind<KeyboardShortcut>(GENERAL_SETTINGS, "QuickEquipTorchHotkey", new KeyboardShortcut(KeyCode.T), "Find the torch with the lowest durability in your inventory and equip it");
-			quickOpenSkillsHotkey = base.Config.Bind<KeyboardShortcut>(GENERAL_SETTINGS, "QuickOpenSkillsHotkey", new KeyboardShortcut(KeyCode.P), "Open the skills menu");
-			quickOpenTextsHotkey = base.Config.Bind<KeyboardShortcut>(GENERAL_SETTINGS, "QuickOpenTextsHotkey", new KeyboardShortcut(KeyCode.L), "Open the log that holds all information about statuses and previous messages");
 			buildRotationSnapHotkey = base.Config.Bind<KeyboardShortcut>(GENERAL_SETTINGS, "BuildRotationSnapHotkey", new KeyboardShortcut(KeyCode.LeftControl), "Hold this key while scrolling to rotate objects 90 degrees in build mode");
 			easyHotbarPrefix = base.Config.Bind<KeyboardShortcut>(GENERAL_SETTINGS, "EasyHotbarPrefix", new KeyboardShortcut(KeyCode.LeftAlt), "Hold this prefix together with 1-4 in order to use hotbar items 5-8");
 			scrollPieceSelectionPrefix = base.Config.Bind<KeyboardShortcut>(GENERAL_SETTINGS, "ScrollPieceSelectionPrefix", new KeyboardShortcut(KeyCode.LeftAlt), "Hold this prefix together with scrolling to quickly switch between items in a hammer/hoe/cultivator menu");
